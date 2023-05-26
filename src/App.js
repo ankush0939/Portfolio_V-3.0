@@ -1,39 +1,35 @@
-import React, { useState } from "react";
-import { ThemeProvider } from "styled-components";
-import { themes } from "./theme";
-import { GlobalStyles } from "./global";
-import { CursorProvider } from "react-cursor-custom";
-import { settings } from "./portfolio";
-import { TooltipProvider } from "react-tooltip";
-import Main from "./containers/Main";
-import "./App.css";
-import "react-tooltip/dist/react-tooltip.css";
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+
+import { ThemeContext } from './contexts/ThemeContext';
+import { Main, BlogPage, ProjectPage } from './pages'
+import { BackToTop } from './components'
+import ScrollToTop from './utils/ScrollToTop'
+
+import './App.css'
 
 function App() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-  const useCursor = settings.useCustomCursor;
+
+  const { theme } = useContext(ThemeContext);
+
+  console.log("%cDEVELOPER PORTFOLIO", `color:${theme.primary}; font-size:50px`);
+  console.log("%chttps://github.com/hhhrrrttt222111/developer-portfolio", `color:${theme.tertiary}; font-size:20px`);
+  // console.log = console.warn = console.error = () => {};
 
   return (
-    <ThemeProvider theme={themes[theme]}>
-      <>
-        <GlobalStyles />
-        <div>
-          {useCursor ? (
-            <CursorProvider
-              color={themes[theme].secondaryText}
-              ringSize={25}
-              transitionTime={75}
-            >
-              <TooltipProvider>
-                <Main theme={themes[theme]} setTheme={setTheme} />
-              </TooltipProvider>
-            </CursorProvider>
-          ) : (
-            <Main theme={themes[theme]} setTheme={setTheme} />
-          )}
-        </div>
-      </>
-    </ThemeProvider>
+    <div className="app">
+      <Router>
+        <ScrollToTop/>
+        <Switch>
+          <Route path="/" exact component={Main} />
+          <Route path="/blog" exact component={BlogPage} />
+          <Route path="/projects" exact component={ProjectPage} />
+
+          <Redirect to="/" />
+        </Switch>
+      </Router>
+      <BackToTop />
+    </div>
   );
 }
 

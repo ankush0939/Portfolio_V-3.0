@@ -1,17 +1,32 @@
-import React from "react";
-import { Fade } from "react-reveal";
-import { greeting } from "../../portfolio.js";
-import "./Footer.css";
-/* eslint-disable jsx-a11y/accessible-emoji */
+import React, { useContext } from 'react'
+import './Footer.css'
+import { ThemeContext } from '../../contexts/ThemeContext'
+import { headerData } from '../../data/headerData'
 
-export default function Footer(props) {
-  return (
-    <div className="footer-div">
-      <Fade>
-        <p className="footer-text" style={{ color: props.theme.secondaryText }}>
-          Made with <span role="img">❤️</span> by {greeting.full_name}
-        </p>
-      </Fade>
-    </div>
-  );
+function Footer() {
+
+    const shortname = (name) => {
+        if(name.length > 10) {
+            return name.split(" ")[0]
+        } else {
+            return name
+        }
+    }
+
+    const { theme }  = useContext(ThemeContext)
+
+    return (
+        <div className="footer" style={{backgroundColor: theme.secondary}}>
+            <p style={{color: theme.tertiary}}>
+                Made with  
+                <span style={{color: theme.primary, margin: '0 0.5rem -1rem 0.5rem'}}>
+                    ❤
+                </span>
+                 by {shortname(headerData.name)}
+            </p>
+        </div>
+    )
 }
+
+export default Footer
+

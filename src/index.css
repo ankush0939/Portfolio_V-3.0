@@ -1,93 +1,63 @@
-@font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&display=swap');
 
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
+  font-family: 'BestermindRegular';
+  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf'); 
+  src: url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('embedded-opentype'), 
+       url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), 
 }
 
-@font-face {
-  font-family: "Google Sans Bold";
-  src: local("Google Sans Bold"),
-    url("./assets/fonts/GoogleSans-Bold.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Bold Italic";
-  src: local("Google Sans Bold Italic"),
-    url("./assets/fonts/GoogleSans-BoldItalic.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Italic";
-  src: local("Google Sans Italic"),
-    url("./assets/fonts/GoogleSans-Italic.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Medium";
-  src: local("Google Sans Medium"),
-    url("./assets/fonts/GoogleSans-Medium.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Medium Italic";
-  src: local("Google Sans Medium Italic"),
-    url("./assets/fonts/GoogleSans-MediumItalic.ttf") format("woff");
-}
-
-@font-face {
-  font-family: "Google Sans Regular";
-  src: local("Google Sans Regular"),
-    url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-html,
-body {
-  scroll-behavior: smooth;
-}
-
-body {
+* {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+
+/* scrollBar */
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #292a2d;
+    background: #555;
 }
-
 ::-webkit-scrollbar-thumb {
-  background: #e3405f;
-  border-radius: 5px;
+    background: #555;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #e3405f;
+img{
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none;
+     -khtml-user-select: none; 
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
+
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  html,
+
+@media screen and (max-width: 400px) {
   body {
-    font-size: 16px;
-    line-height: normal;
+    overflow-x: hidden;
   }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    body {
+      overflow-x: hidden;
+    }
 }
