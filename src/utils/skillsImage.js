@@ -58,6 +58,16 @@ import strapi from '../assets/svg/skills/strapi.svg'
 import tensorflow from '../assets/svg/skills/tensorflow.svg'
 import webix from '../assets/svg/skills/webix.svg'
 import wordpress from '../assets/svg/skills/wordpress.svg'
+import nodejs from '../assets/svg/skills/nodejs.svg'
+import colab from '../assets/svg/skills/colab.svg'
+import expressjs from '../assets/svg/skills/expressjs.svg'
+import redux from '../assets/svg/skills/redux.svg'
+import pandas from '../assets/svg/skills/pandas.svg'
+import linux from '../assets/svg/skills/linux.svg'
+import postman from '../assets/svg/skills/postman.svg'
+import github from '../assets/svg/skills/github.svg'
+import jquery from '../assets/svg/skills/jquery.svg'
+import vscode from '../assets/svg/skills/vscode.svg'
 
 import azure from '../assets/svg/skills/azure.svg'
 import blender from '../assets/svg/skills/blender.svg'
@@ -227,6 +237,26 @@ export const skillsImage = (skill) => {
             return wolframalpha;
         case 'canva':
             return canva;
+        case 'redux':
+            return redux;
+        case 'express js':
+            return expressjs;
+        case 'pandas':
+            return pandas;
+        case 'node js':
+            return nodejs;
+        case 'postman':
+            return postman;
+        case 'github':
+            return github;
+        case 'google colab':
+            return colab;
+        case 'linux':
+            return linux;
+        case 'jquery':
+            return jquery;
+        case 'vs code':
+            return vscode;
         default:
             break;
     }

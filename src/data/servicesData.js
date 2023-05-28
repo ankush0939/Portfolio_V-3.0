@@ -1,8 +1,6 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil } from "react-icons/bi";
-import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
-import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
+import { BiPencil } from "react-icons/bi";
+import { FaMobileAlt,  FaClipboardList, FaCameraRetro, FaFileImage, FaDesktop, FaCubes, FaRegNewspaper, FaCloud } from "react-icons/fa";
 
  
 
@@ -10,7 +8,7 @@ export const servicesData = [
     {
         id: 1,
         title: 'Frontend',
-        icon: <BiShoppingBag/>
+        icon: <FaDesktop/>
     },
     {
         id: 2,
@@ -20,22 +18,22 @@ export const servicesData = [
     {
         id: 3,
         title: 'Backend',
-        icon: <AiOutlineMail />
+        icon: <FaCubes />
     },
     {
         id: 4,
         title: 'Application Dev',
-        icon: <FaInternetExplorer />
+        icon: <FaMobileAlt />
     },
     {
         id: 5,
         title: 'Devops',
-        icon: <FaChalkboardTeacher />
+        icon: <FaCloud />
     },
     {
         id: 6,
         title: 'Data Science',
-        icon: <BsCodeSlash />
+        icon: <FaClipboardList />
     },
     {
         id: 7,
@@ -45,30 +43,10 @@ export const servicesData = [
     {
         id: 8,
         title: 'Graphic Designing',
-        icon: <FaPinterest />
+        icon: <FaFileImage/>
     }, 
-    // {
-    //     id: 9,
-    //     title: 'Video Editing',
-    //     icon: <FaVideo />
-    // },
-    // {
-    //     id: 10,
-    //     title: 'Data Entry', 
-    //     icon: <BsClipboardData />
-    // },
-    // {
-    //     id: 11,
-    //     title: 'Ebook Writing',
-    //     icon: <FaTabletAlt />
-    // },
-    // {
-    //     id: 12,
-    //     title: 'Audio Transcription',
-    //     icon: <AiFillAudio />
-    // },
     {
-        id: 13,
+        id: 9,
         title: 'Blog Writing',
         icon: <FaRegNewspaper />
     },

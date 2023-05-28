@@ -19,7 +19,7 @@ function Services() {
                     </div>
                     <div className="services-body">
                         <p style={{color:theme.tertiary80}}>
-                            These are some of my expertise. Reach out to me if I can help you with any!
+                            Expertise is a beacon that illuminates our path, honed through passion and dedication. Embrace your expertise, share it with the world, and watch as your unique insights make a meaningful impact, shaping a brighter future for all!
                         </p>
                         <div className="services-bodycontainer">
                             {servicesData.map(services => (
