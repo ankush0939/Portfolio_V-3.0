@@ -11,9 +11,11 @@ import { socialsData } from '../../data/socialsData';
 import {
     FaTwitter,
     FaLinkedin,
-    FaGithub,
-    FaYoutube,
-    FaBlogger,
+    // FaGithub,
+    FaFacebook,
+    FaInstagram,
+    // FaYoutube,
+    // FaBlogger,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -88,7 +90,33 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.github && (
+                        {socialsData.facebook && (
+                            <a
+                                href={socialsData.facebook}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaFacebook
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='LinkedIn'
+                                />
+                            </a>
+                        )}
+                        {socialsData.instagram && (
+                            <a
+                                href={socialsData.instagram}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FaInstagram
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='LinkedIn'
+                                />
+                            </a>
+                        )}
+                        {/* {socialsData.github && (
                             <a
                                 href={socialsData.github}
                                 target='_blank'
@@ -100,7 +128,7 @@ function Landing() {
                                     aria-label='GitHub'
                                 />
                             </a>
-                        )}
+                        )} */}
                         {socialsData.twitter && (
                             <a
                                 href={socialsData.twitter}
@@ -114,7 +142,7 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.youtube && (
+                        {/* {socialsData.youtube && (
                             <a
                                 href={socialsData.youtube}
                                 target='_blank'
@@ -139,7 +167,7 @@ function Landing() {
                                     aria-label='Blogger'
                                 />
                             </a>
-                        )}
+                        )} */}
                     </div>
                 </div>
                 <img

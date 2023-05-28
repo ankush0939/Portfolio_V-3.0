@@ -8,13 +8,14 @@ import {
     FaTwitter,
     FaLinkedinIn,
     FaGithub,
-    FaYoutube,
-    FaBloggerB,
-    FaRedditAlien,
-    FaStackOverflow,
-    FaCodepen,
+    FaFacebook,
+    // FaYoutube,
+    // FaBloggerB,
+    // FaRedditAlien,
+    // FaStackOverflow,
+    // FaCodepen,
     FaInstagram,
-    FaGitlab,
+    // FaGitlab,
     FaMediumM,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
@@ -353,6 +354,16 @@ function Contacts() {
                                     <FaInstagram aria-label='Instagram' />
                                 </a>
                             )}
+                            {socialsData.facebook && (
+                                <a
+                                    href={socialsData.facebook}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={classes.socialIcon}
+                                >
+                                    <FaFacebook aria-label='Instagram' />
+                                </a>
+                            )}
                             {socialsData.medium && (
                                 <a
                                     href={socialsData.medium}
@@ -363,7 +374,7 @@ function Contacts() {
                                     <FaMediumM aria-label='Medium' />
                                 </a>
                             )}
-                            {socialsData.blogger && (
+                            {/* {socialsData.blogger && (
                                 <a
                                     href={socialsData.blogger}
                                     target='_blank'
@@ -422,7 +433,7 @@ function Contacts() {
                                 >
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
-                            )}
+                            )} */}
                         </div>
                     </div>
                 </div>
