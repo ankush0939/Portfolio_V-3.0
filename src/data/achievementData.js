@@ -24,8 +24,15 @@ export const achievementData = {
             date : 'July 2022',
             field : 'Networking',
             image : 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+        },
+        {
+            id : 4,
+            title : 'Python Coderider Certification',
+            details : 'Syntax, implementation, and problem solving using python.',
+            date : 'July 2021',
+            field : 'Programming',
+            image : 'https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80'
         }
-
     ]
 }
 
