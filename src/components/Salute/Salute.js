@@ -3,7 +3,7 @@ import './Footer.css'
 import { ThemeContext } from '../../contexts/ThemeContext'
 import { headerData } from '../../data/headerData'
 
-function Footer() {
+function Salute() {
 
     const shortname = (name) => {
         if(name.length > 10) {
@@ -28,5 +28,5 @@ function Footer() {
     )
 }
 
-export default Footer
+export default Salute
 
