@@ -23,8 +23,8 @@ export const projectsData = [
     {
         id: 2,
         projectName: 'Covid Statics',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
-        tags: ['Django', 'Tailwind CSS'],
+        projectDesc: 'This is a python based GUI project created to track covid statistics all across the globe.',
+        tags: ['Tkinter', 'GUI', 'Python'],
         code: '#',
         demo: '#',
         image: two
@@ -32,8 +32,8 @@ export const projectsData = [
     {
         id: 3,
         projectName: 'Uber API Webapp',
-        projectDesc: 'Uber clone',
-        tags: ['Flutter'],
+        projectDesc: 'Uber frontend clone integrated with Uber API',
+        tags: ['Flasl', 'Algorithms'],
         code: '#',
         demo: '#',
         image: six
@@ -41,8 +41,8 @@ export const projectsData = [
     {
         id: 4,
         projectName: 'Movies Search',
-        projectDesc: 'This project involves the development of an Android application for viewing and managing patient data.',
-        tags: ['Flutter', 'Firebase'],
+        projectDesc: 'This project is a react site implementing generic search using an externam API.',
+        tags: ['React', 'JavaScript'],
         code: '#',
         demo: '#',
         image: four
@@ -50,8 +50,8 @@ export const projectsData = [
     {
         id: 5,
         projectName: 'TodoList',
-        projectDesc: 'A Simple E-commerce application',
-        tags: ['React Native', 'Firebase'],
+        projectDesc: 'A Simple todo list created using react.',
+        tags: ['React', 'JavaScript'],
         code: '#',
         demo: '#',
         image: five
@@ -59,8 +59,8 @@ export const projectsData = [
     {
         id: 6,
         projectName: 'ChatMe',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
-        tags: ['Django', 'CSS', 'Material Ui'],
+        projectDesc: 'A chatroom application created with Node as backend and basic frontend tools.',
+        tags: ['HTML', 'CSS', 'Node'],
         code: '#',
         demo: '#',
         image: three
@@ -68,8 +68,8 @@ export const projectsData = [
     {
         id: 7,
         projectName: 'Automated Gardenning System',
-        projectDesc: 'A simple stock market API app',
-        tags: ['React', 'Redux', 'Bootstrap'],
+        projectDesc: 'An automation system implementing Arduino for watering plants.',
+        tags: ['Arduino', 'Automation', 'IOT'],
         code: '#',
         demo: '#',
         image: seven
@@ -77,8 +77,8 @@ export const projectsData = [
     {
         id: 8,
         projectName: 'Morsecode Encoder/Decoder',
-        projectDesc: 'The carpooling system merges multiple people in a car which leads to meet new people, reduces pollution',
-        tags: ['Flutter', 'React'],
+        projectDesc: 'This is a python based script created to encode messages to morse as well as retrive them.',
+        tags: ['Python', 'CLI'],
         code: '#',
         demo: '#',
         image: eight
@@ -86,8 +86,8 @@ export const projectsData = [
     {
         id: 9,
         projectName: 'Notifier',
-        projectDesc: 'A simple stock market API app',
-        tags: ['React', 'Redux', 'Bootstrap'],
+        projectDesc: 'A desktop notifier created using python.',
+        tags: ['Python', 'CLI'],
         code: '#',
         demo: '#',
         image: nine
@@ -95,8 +95,8 @@ export const projectsData = [
     {
         id: 10,
         projectName: 'Mailer',
-        projectDesc: 'The carpooling system merges multiple people in a car which leads to meet new people, reduces pollution',
-        tags: ['Flutter', 'React'],
+        projectDesc: 'This is a mailing application craeted using Node and React',
+        tags: ['Node', 'React'],
         code: '#',
         demo: '#',
         image: ten
